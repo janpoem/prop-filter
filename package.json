@@ -1,12 +1,14 @@
 {
   "name": "prop-filter",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "repository": "https://gitee.com/janpoem/prop-filter.git",
+  "homepage": "https://gitee.com/janpoem/prop-filter.git",
   "author": "Janpoem <janpoem@163.com>",
   "license": "MIT",
   "main": "index.js",
+  "module": "PropFilter.js",
   "scripts": {
-    "test": "jest Filter.test.js",
+    "test": "jest",
     "build": "rollup -c"
   },
   "engines": {
@@ -14,18 +16,28 @@
   },
   "jest": {
     "transform": {
-      "^.+\\.m?jsx?$": "babel-7-jest"
+      "^.+\\.m?jsx?$": "babel-jest"
     }
   },
   "dependencies": {
     "deepmerge": "^2.2.1",
-    "php-trim-plus": "^0.0.1",
+    "lodash": "^4.17.11",
+    "php-trim-plus": "^0.0.2",
     "typechecker": "^4.6.0"
   },
   "devDependencies": {
     "@babel/core": "^7.1.6",
     "@babel/preset-env": "^7.1.6",
-    "babel-7-jest": "^21.3.3",
-    "jest": "^23.6.0"
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "jest": "^23.6.0",
+    "rollup": "^0.67.1",
+    "rollup-plugin-babel": "^4.0.3",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-node-resolve": "^3.4.0",
+    "rollup-plugin-uglify": "^6.0.0"
+  },
+  "resolutions": {
+    "babel-core": "7.0.0-bridge.0"
   }
 }
