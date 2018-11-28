@@ -4,7 +4,7 @@
 [![Build Status](https://img.shields.io/travis/janpoem/prop-filter/master.svg)](https://travis-ci.org/janpoem/prop-filter)
 [![Dependencies Status](https://img.shields.io/david/janpoem/prop-filter.svg)](https://david-dm.org/janpoem/prop-filter)
 
-一个羽量级、非侵入式的对象属性读写过滤器代理，能轻松、写意的与任何项目环境结合，瞬间提升你的编程效率，更好的提升你的代码的重用性。
+一个羽量级、非侵入式的对象属性读写过滤器代理，能轻松、自由的与任何项目环境结合，瞬间提升你的编程效率，更好的提升你的代码的重用性。
 
 写 Javascript 代码时经常伴随着大量的对象属性的读写，常常需要针对特定范围的对象实例，编写特定的 get/set 的方法。这些方法不但让一个类设计变得臃肿，往往实际情况是，费劲巴拉的写了一大堆 get/set ，真正被用到的可能只有那么一两个，一个项目写下来，总会思考，有没有可能将 set/get 方法可以作为独立模块或者 Class ，进行统一的管理和升级，但同时又不破坏原生类的业务逻辑呢？
 
