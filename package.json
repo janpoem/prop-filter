@@ -1,12 +1,32 @@
 {
   "name": "prop-filter",
   "version": "0.0.1",
+  "description": "A lightweight, non-intrusive object property read-write filter proxy. Can be easily and freely combined with any project environment.",
   "repository": "https://gitee.com/janpoem/prop-filter.git",
+  "keywords": [
+    "data filter",
+    "data access filter",
+    "data access proxy",
+    "data getter",
+    "data setter",
+    "property filter",
+    "property access proxy",
+    "property getter",
+    "property setter"
+  ],
   "homepage": "https://gitee.com/janpoem/prop-filter.git",
   "author": "Janpoem <janpoem@163.com>",
   "license": "MIT",
   "main": "index.js",
   "module": "PropFilter.js",
+  "files": [
+    "index.js",
+    "index.js.map",
+    "PropFilter.js",
+    "PropFilter.lodash-standalone.js",
+    "src/*",
+    "dist/*"
+  ],
   "scripts": {
     "test": "jest",
     "build": "rollup -c"

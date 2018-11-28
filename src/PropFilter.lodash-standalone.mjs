@@ -1,11 +1,13 @@
 'use strict';
 
-import typechecker from 'typechecker/source/index';
+import tc from 'typechecker/source/index.js';
 import * as trim from 'php-trim-plus';
 import deepmerge from 'deepmerge';
-import getProp from 'lodash/get';
-import setProp from 'lodash/set';
-import hasProp from 'lodash/has';
+// lodash 全局对象存在，项目可能存在，并不打包 lodash 的需求，lodash 包确实太大
+import _ from "lodash";
+const getProp = _.get;
+const setProp = _.set;
+const hasProp = _.has;
 
 const isArray = Array.isArray;
 
@@ -122,7 +124,7 @@ export default class PropFilter {
 	}
 
 	getType(value) {
-		return typechecker.getType(value);
+		return tc.getType(value);
 	}
 
 	isNothing(value) {
@@ -147,15 +149,15 @@ export default class PropFilter {
 	}
 
 	isObject(value) {
-		return typechecker.isObject(value);
+		return tc.isObject(value);
 	}
 
 	isPlainObject(value) {
-		return typechecker.isPlainObject(value);
+		return tc.isPlainObject(value);
 	}
 
 	isEmptyObject(value) {
-		return typechecker.isEmptyObject(value);
+		return tc.isEmptyObject(value);
 	}
 
 	isArray(value) {
@@ -180,7 +182,7 @@ export default class PropFilter {
 	}
 
 	isNumber(value) {
-		return typechecker.isNumber(value);
+		return tc.isNumber(value);
 	}
 
 	isStringNumber(value) {
@@ -189,14 +191,14 @@ export default class PropFilter {
 	}
 
 	isBoolean(value) {
-		return typechecker.isBoolean(value);
+		return tc.isBoolean(value);
 	}
 
 	isRegExp(value) {
-		return typechecker.isRegExp(value);
+		return tc.isRegExp(value);
 	}
 
 	isError(value) {
-		return typechecker.isError(value);
+		return tc.isError(value);
 	}
 }
