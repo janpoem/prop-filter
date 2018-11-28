@@ -278,7 +278,9 @@ filter.isNotUndefined(value); // 非 undefined
 filter.isArray(value);        // 是 数组
 filter.isEmptyArray(value);   // 是 空数组
 filter.isStringNumber(value); // 是 字符串数值
-filter.isFunction(value);     // 是 函数，目前版本使用的是 typeof value === 'function' ，目前发现，typechecker.isSyncFunction 和 typechecker.isAsyncFunction 判定失效，部分 js 环境无法识别出来。
+filter.isFunction(value);     // 是 函数，目前版本使用的是 typeof value === 'function' ，
+							  // 目前发现，typechecker.isSyncFunction 和 typechecker.isAsyncFunction 判定失效，
+							  // 部分 js 环境无法识别出来。
 ```
 
 typechecker 系列，请参考 [API DOC](http://master.typechecker.bevry.surge.sh/docs/)
